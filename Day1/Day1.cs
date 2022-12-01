@@ -11,4 +11,4 @@ var calories = groups.Select(g => g.Sum()).ToList();
 Console.WriteLine(calories.Max());
 
 // 2
-Console.WriteLine(calories.OrderByDescending(x => x).Take(3).Sum());
+Console.WriteLine(calories.OrderDescending().Take(3).Sum());
